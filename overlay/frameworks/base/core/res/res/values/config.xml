@@ -459,4 +459,16 @@
           <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
           <item>9</item> <!-- COLOR_MODE_DISPLAY_P3 -->
      </integer-array>
+
+     <!-- Specifies priority of automatic time sources. Suggestions from higher entries in the list
+         take precedence over lower ones.
+         See com.android.server.timedetector.TimeDetectorStrategy for available sources. -->
+     <string-array name="config_autoTimeSourcesPriority">
+          <item>network</item>
+          <item>gnss</item>
+     </string-array>
+
+    <!-- Enables the GnssTimeUpdate service. This is the global switch for enabling Gnss time based
+         suggestions to TimeDetector service. See also config_autoTimeSourcesPriority. -->
+     <bool name="config_enableGnssTimeUpdateService">true</bool>
 </resources>
