@@ -471,4 +471,17 @@
     <!-- Enables the GnssTimeUpdate service. This is the global switch for enabling Gnss time based
          suggestions to TimeDetector service. See also config_autoTimeSourcesPriority. -->
      <bool name="config_enableGnssTimeUpdateService">true</bool>
+
+    <!-- Whether the time zone detection logic supports fall back from geolocation suggestions to
+         telephony suggestions temporarily in certain circumstances. Reduces time zone detection
+         latency during some scenarios like air travel. Only useful when both geolocation and
+         telephony time zone detection are supported on a device.
+         See com.android.server.timezonedetector.TimeZoneDetectorStrategy for more information. -->
+    <bool name="config_supportTelephonyTimeZoneFallback" translatable="false">false</bool>
+
+     <!-- Whether the primary location time zone provider is enabled.
+          This setting is ignored if config_enableGeolocationTimeZoneDetection is false.
+
+          AOSP does not configure a primary location time zone provider. -->
+     <bool name="config_enablePrimaryLocationTimeZoneProvider" translatable="false">true</bool>
 </resources>
