@@ -68,7 +68,7 @@ TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/proton-clang
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/lenovo/J607Z
-TARGET_KERNEL_CONFIG := vendor/arnoz_row_lte-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/arnoz_defconfig
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
