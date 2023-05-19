@@ -34,9 +34,9 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 
-import org.pixelexperience.settings.R;
+import org.pixelexperience.settings2.R;
 
-import org.pixelexperience.settings.doze.DozeSettingsActivity;
+import org.pixelexperience.settings2.doze.DozeSettingsActivity;
 
 import com.android.settingslib.widget.MainSwitchPreference;
 import com.android.settingslib.widget.OnMainSwitchChangeListener;

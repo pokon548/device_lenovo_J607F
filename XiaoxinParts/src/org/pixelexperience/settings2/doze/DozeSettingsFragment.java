@@ -34,7 +34,7 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 
-import org.pixelexperience.settings.R;
+import org.pixelexperience.settings2.R;
 
 import android.provider.Settings;
 
