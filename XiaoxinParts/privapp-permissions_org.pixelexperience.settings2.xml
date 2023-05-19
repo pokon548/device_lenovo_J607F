@@ -13,7 +13,7 @@
   -->
 
 <permissions>
-    <privapp-permissions package="org.pixelexperience.settings">
+    <privapp-permissions package="org.pixelexperience.settings2">
         <permission name="android.permission.RECEIVE_BOOT_COMPLETED" />
         <permission name="android.permission.WRITE_SETTINGS" />
         <permission name="android.permission.WRITE_SECURE_SETTINGS" />

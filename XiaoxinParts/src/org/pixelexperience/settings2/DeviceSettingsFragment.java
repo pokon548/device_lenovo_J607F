@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.pixelexperience.settings;
+package org.pixelexperience.settings2;
 
 import android.app.Activity;
 import android.app.AlertDialog;

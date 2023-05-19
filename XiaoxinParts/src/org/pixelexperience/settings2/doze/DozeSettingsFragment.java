@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.pixelexperience.settings.doze;
+package org.pixelexperience.settings2.doze;
 
 import android.app.Activity;
 import android.app.AlertDialog;

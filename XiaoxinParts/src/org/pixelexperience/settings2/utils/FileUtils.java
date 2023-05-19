@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.pixelexperience.settings.utils;
+package org.pixelexperience.settings2.utils;
 
 import android.util.Log;
 

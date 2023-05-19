@@ -15,21 +15,22 @@
  * limitations under the License.
  */
 
-package org.pixelexperience.settings;
+package org.pixelexperience.settings2.doze;
 
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import com.android.settingslib.widget.R;
 
-public class DeviceSettingsActivity extends CollapsingToolbarBaseActivity {
+public class DozeSettingsActivity extends CollapsingToolbarBaseActivity {
+
+    private static final String TAG_DOZE = "doze";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         getFragmentManager().beginTransaction().replace(R.id.content_frame,
-                new DeviceSettingsFragment()).commit();
+                new DozeSettingsFragment(), TAG_DOZE).commit();
     }
-    
 }
