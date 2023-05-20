@@ -896,10 +896,10 @@ function enable_swap() {
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
     MemTotal=${MemTotalStr:16:8}
 
-    SWAP_ENABLE_THRESHOLD=1048576
+    SWAP_ENABLE_THRESHOLD=8388608
     swap_enable=`getprop ro.vendor.qti.config.swap`
 
-    # Enable swap initially only for 1 GB targets
+    # Enable swap initially only for 8 GB targets
     if [ "$MemTotal" -le "$SWAP_ENABLE_THRESHOLD" ] && [ "$swap_enable" == "true" ]; then
         # Static swiftness
         echo 1 > /proc/sys/vm/swap_ratio_enable
