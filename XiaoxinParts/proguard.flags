@@ -1,7 +1,0 @@
--keep class org.pixelexperience.settings2.doze.* {
-  *;
-}
-
--keep class org.pixelexperience.settings2.* {
-  *;
-}
