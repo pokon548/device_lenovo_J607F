@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_J607F.mk
+    $(LOCAL_DIR)/lineage_J607F.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_J607F-user \
-    aosp_J607F-userdebug \
-    aosp_J607F-eng
+    lineage_J607F-user \
+    lineage_J607F-userdebug \
+    lineage_J607F-eng

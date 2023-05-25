@@ -6,13 +6,14 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit from J607F device
 $(call inherit-product, device/lenovo/J607F/device.mk)
 
 # Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
@@ -21,7 +22,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 PRODUCT_PACKAGES += \
 	androidx.window.extensions
 	
-DEVICE_MAINTAINER := bigsaltyfishes
+DEVICE_MAINTAINER := pokon548
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_J607F
